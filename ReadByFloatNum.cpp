@@ -1,7 +1,15 @@
 /*
+题目：
 一个浮点数，输出他的英文读法，
 比如456456.222读four hundred fifty six thousand four hundred fifty six point two two two，
 默认小数点后3位，小数点前最长12位，也就是到billion。
+*/
+
+
+/*
+从后往前，每三位为一组转化为十进制数从低到高存放在数组中
+然后从高往低依次处理
+由于长度为12并且小数点后默认3位，所以可以进行特殊处理
 */
 
 #include <iostream>
